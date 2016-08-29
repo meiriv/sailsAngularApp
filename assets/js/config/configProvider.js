@@ -28,6 +28,20 @@
 			return self.urls.data + name + '.json';
 		};
 
+		///
+		// Instance Level
+		///
+
+		this.$get = function($http, $q) {			
+
+			// Add method to copy helper methods onto a given scope
+			self.importHelpers = function(scope) {
+				scope.templateUrl = self.templateUrl;
+			};
+
+			return self;
+		};
+
 		this.$get.$inject = [
 			'$http',
 			'$q'

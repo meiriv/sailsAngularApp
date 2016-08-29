@@ -4,13 +4,16 @@
 	angular.module('app').controller('ApplicationController', ApplicationController);
 
 	ApplicationController.$inject = [
-		'$scope', '$routeParams'
+		'$scope', '$routeParams' , 'config'
 	];
 
 	function ApplicationController(
-		$scope, $routeParams
+		$scope, $routeParams , config
 	) {
-		
+		var vm = this;
 		$scope.appName = "Template Application";
+
+		// set URL configuration
+		config.importHelpers(vm);
 	}
 }());
