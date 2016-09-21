@@ -8,6 +8,7 @@
  * file.  If your repository will be publicly viewable, don't add
  * any private information to this file!
  *
+ * For local env configuration use config/local.js (do not commit to SVN!)
  */
 
 module.exports = {
@@ -21,4 +22,12 @@ module.exports = {
   //   connection: 'someMongodbServer'
   // }
 
+  
+
+};
+
+// Set All application cnstants here
+module.exports.constants = {
+	appName : "Sails Application from development config file",
+    Title : "Title"
 };

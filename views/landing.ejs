@@ -1,16 +1,20 @@
 <!-- Default home page -->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600' rel='stylesheet' type='text/css'>
-<style>
-  
-</style>
-
 
 <div class="default-page" ng-app="app" ng-controller="ApplicationController">
+  <!-- Application Header -->	
+  <div ng-include="'templates/header.html'"></div>
+  <!-- Left Navigation -->	
+  <div ng-include="'templates/navigation.html'"></div>
+
+  <!-- Landing page body -->
   <div class="header">
     <h1 id="main-title" class="container"><%= __('A brand new app.') %></h1>
     <h3 class="container">You're looking at: <code><%= view.pathFromApp + '.' +view.ext %></code></h3>
   </div>
   <div>
-  <label> This is a test aaaaaa {{constants.appName}} </label>
+  <label> Application Name: {{constants.appName}} </label>
   </div>
+
+  <!-- Application Footer -->	
+  <div ng-include="'templates/footer.html'"></div>
 </div>
