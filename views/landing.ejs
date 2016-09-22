@@ -1,20 +1,22 @@
 <!-- Default home page -->
 
-<div class="default-page" ng-app="app" ng-controller="ApplicationController">
+<div class="app-wrapper" ng-app="app" ng-controller="ApplicationController">
   <!-- Application Header -->	
-  <div ng-include="'templates/header.html'"></div>
+  <div class="header" ng-include="'templates/header.html'"></div>
   <!-- Left Navigation -->	
-  <div ng-include="'templates/navigation.html'"></div>
+  <div class="navigation col-md-3" ng-include="'templates/navigation.html'"></div>
 
   <!-- Landing page body -->
-  <div class="header">
-    <h1 id="main-title" class="container"><%= __('A brand new app.') %></h1>
-    <h3 class="container">You're looking at: <code><%= view.pathFromApp + '.' +view.ext %></code></h3>
-  </div>
-  <div>
-  <label> Application Name: {{constants.appName}} </label>
+  <div class="main-content col-md-9">
+    <div>
+      <h1 id="main-title" class="container"><%= __('A brand new app.') %></h1>
+      <h3 class="container">You're looking at: <code><%= view.pathFromApp + '.' +view.ext %></code></h3>
+      <div class="container">
+          <label> Application Name: {{constants.appName}} </label>
+      </div>
+    </div>
   </div>
 
   <!-- Application Footer -->	
-  <div ng-include="'templates/footer.html'"></div>
+  <div class="footer" ng-include="'templates/footer.html'"></div>
 </div>
