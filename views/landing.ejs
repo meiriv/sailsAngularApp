@@ -4,18 +4,10 @@
   <!-- Application Header -->	
   <div class="header" ng-include="'templates/header.html'"></div>
   <!-- Left Navigation -->	
-  <div class="navigation col-md-3" ng-include="'templates/navigation.html'"></div>
+  <div id="navDiv" class="navigation col-md-3" ng-include="'templates/navigation.html'"></div>
 
-  <!-- Landing page body -->
-  <div class="main-content col-md-9">
-    <div>
-      <h1 id="main-title" class="container"><%= __('A brand new app.') %></h1>
-      <h3 class="container">You're looking at: <code><%= view.pathFromApp + '.' +view.ext %></code></h3>
-      <div class="container">
-          <label> Application Name: {{constants.appName}} </label>
-      </div>
-    </div>
-  </div>
+  <!-- Landing page body ng-view will take care for routing the URL according to the app.router.js routing mappings-->
+  <div class="main-content col-md-9" ng-view></div>
 
   <!-- Application Footer -->	
   <div class="footer" ng-include="'templates/footer.html'"></div>
