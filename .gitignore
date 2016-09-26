@@ -68,6 +68,8 @@ config/local.js
 
 node_modules
 bower_components
+dependencies
+
 
 
 
@@ -79,6 +81,9 @@ bower_components
 # tasks and adapters.
 ################################################
 .tmp
+.bower-cache
+.bower-registry
+.bower-tmp
 dump.rdb
 
 

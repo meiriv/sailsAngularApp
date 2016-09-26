@@ -1,0 +1,25 @@
+{
+  "name": "Sails Angular app",
+  "dependencies": {
+    "angular": "1.5.8",
+    "angular-route": "1.5.8",
+    "jquery": "3.1.0",
+    "angular-bootstrap": "1.3.3",
+    "angular-ui": "0.4.0",
+    "bootstrap": "3.3.7",
+    "sails.io.js": "0.12.4"
+  },
+  "homepage": "https://github.com/meiriv/sailsAngularApp",
+  "authors": [
+    "meiriv <meiriv@gmail.com>"
+  ],
+  "description": "basic start for sails + angular application",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

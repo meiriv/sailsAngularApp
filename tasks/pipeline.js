@@ -18,9 +18,9 @@
 //  to change `assets/styles/importer.less` instead.)
 var cssFilesToInject = [
   
-  'js/dependencies/bootstrap.min.css',
-  'js/dependencies/angular-ui.min.css',
-  'js/dependencies/ui-bootstrap-csp.css',
+  'js/dependencies/bootstrap/dist/css/bootstrap.min.css',
+  'js/dependencies/angular-ui/build/angular-ui.min.css',
+  'js/dependencies/angular-bootstrap/ui-bootstrap-csp.css',
   'styles/importer.css'
  
 ];
@@ -31,33 +31,34 @@ var cssFilesToInject = [
 var jsFilesToInject = [
 
   // Load sails.io before everything else
-  'js/dependencies/sails.io.js',
+  'js/dependencies/sails.io.js/dist/sails.io.js',
 
-  // Load Angular dependencies first
-  'js/dependencies/jquery.min.js',
-  'js/dependencies/angular.min.js',
-  'js/dependencies/angular-route.min.js',
-  'js/dependencies/ui-bootstrap.min.js',
-  'js/dependencies/ui-bootstrap-tpls.min.js',
+  // Load Angular dependencies first tt
+  'js/dependencies/jquery/dist/jquery.min.js',
+  'js/dependencies/angular/angular.min.js',
+  'js/dependencies/angular-route/angular-route.min.js',
+  'js/dependencies/angular-bootstrap/ui-bootstrap.min.js',
+  'js/dependencies/angular-bootstrap/ui-bootstrap-tpls.min.js',
 
 
-  // Dependencies like jQuery, or Angular are brought in here
-  'js/dependencies/**/*.js',
+  // Dependencies that will be located directly under dependencies folder will be loaded as well
+  'js/dependencies/other/**/*.js',
 
   // Load the main application module
   'js/app.js',
-  'js/app.routs.js',
+  'js/app.routes.js',
 
   // Load rest of application modules
   'js/config/**/*.js',
   'js/controllers/**/*.js',
   'js/directives/**/*.js',
   'js/services/**/*.js',
-  'js/filters/**/*.js',
+  'js/filters/**/*.js'
 
   // All of the rest of your client-side js files
   // will be injected here in no particular order.
-  'js/**/*.js'
+  // Disabling this default to make it more explicit as above lines
+  //'js/**/*.js'
 ];
 
 
