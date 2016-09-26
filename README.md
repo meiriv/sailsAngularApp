@@ -22,14 +22,14 @@ The purpose is to have a quick start for any web application that will give all 
  	- run: bower install
  	  it will download all dependencies under sailsAngularApp\assets\js\dependencies
 
- 	  Note: if you are behind a proxy - change proxy settings in .bowerrc
+ 	  **Note:** if you are behind a proxy - change proxy settings in .bowerrc
  	  		if you want to add new dependency: update sailsAngularApp\assets\bower.json file under dependencies
 
 #### Starting the application:
 run the application by going to sailsAngularApp and running:
-sails lift --verbose (to see logs prints)
-sails lift (by default will start in development mode - means any changes to source file will be build and refreshed on the fly)
-sails lift --prod ( production mode  - include all minified CSS JS and well performance)
+ - sails lift --verbose (to see logs prints)
+ - sails lift (by default will start in development mode - means any changes to source file will be build and refreshed on the fly)
+ - sails lift --prod ( production mode  - include all minified CSS JS and well performance)
 
 #### Landing Page:
 after application is up go to http://localhost:1337/ you will be directed to http://localhost:1337/#/landing which is the landing page defined in sailsAngularApp\views\landing.ejs
