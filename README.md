@@ -8,6 +8,7 @@ The purpose is to have a quick start for any web application that will give all 
 How to start?
 Prerequisite for sails application is node.js so first make ure node is installed:
  - npm -g install sails
+   For platform specific download check [NodeJs Website](https://nodejs.org/en/)
 Other prerequisite:
 	bower Install: npm install -g bower
 
