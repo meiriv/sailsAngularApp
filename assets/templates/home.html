@@ -1,8 +1,13 @@
-<div>
+<div spinner></div>
+<div>	
   <h1 id="main-title" class="container">A brand new app.</h1>
   <h3 class="container">You're looking at: 
   	<code> templates/home.html redirected by app.routes.js  {{location.path()}}</code></h3>
   <div class="container">
       <label> Application Name: {{constants.appName}} </label>
+  </div>
+  <div class="container">
+  	<button type="button" class="btn btn-primary" ng-click="startSpin()">Start spinner</button>
+	<button type="button" class="btn btn-primary" ng-click="stopSpin()">Stop spinner</button>
   </div>
 </div>

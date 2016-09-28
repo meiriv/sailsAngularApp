@@ -39,6 +39,9 @@ var jsFilesToInject = [
   'js/dependencies/angular-route/angular-route.min.js',
   'js/dependencies/angular-bootstrap/ui-bootstrap.min.js',
   'js/dependencies/angular-bootstrap/ui-bootstrap-tpls.min.js',
+  'js/dependencies/spin.js/spin.js',
+  'js/dependencies/angular-spinner/angular-spinner.js',
+
 
 
   // Dependencies that will be located directly under dependencies folder will be loaded as well

@@ -3,7 +3,8 @@
 
 	angular.module('app', [
     'ngRoute',
-  	'ui.bootstrap'
+  	'ui.bootstrap',
+  	'angularSpinner'
 	]);
 
 }());
