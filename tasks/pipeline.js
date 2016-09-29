@@ -21,6 +21,7 @@ var cssFilesToInject = [
   'js/dependencies/bootstrap/dist/css/bootstrap.min.css',
   'js/dependencies/angular-ui/build/angular-ui.min.css',
   'js/dependencies/angular-bootstrap/ui-bootstrap-csp.css',
+  'js/dependencies/angular-material/angular-material.min.css',
   'styles/importer.css'
  
 ];
@@ -41,6 +42,10 @@ var jsFilesToInject = [
   'js/dependencies/angular-bootstrap/ui-bootstrap-tpls.min.js',
   'js/dependencies/spin.js/spin.js',
   'js/dependencies/angular-spinner/angular-spinner.js',
+  'js/dependencies/angular-animate/angular-animate.min.js',
+  'js/dependencies/angular-aria/angular-aria.min.js',
+  'js/dependencies/angular-messages/angular-messages.min.js',
+  'js/dependencies/angular-material/angular-material.min.js',
 
 
 

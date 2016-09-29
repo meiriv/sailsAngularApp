@@ -1,12 +1,25 @@
-<div>
-  <div class="nav-wrapper">
-  	<h2>Left Navigation</h2>
-
-  	<ul class="main-sections">
-          
-          <li class="nav-item">Item 1</li>
-          <li class="nav-item">Item 2</li>
-          <li class="nav-item">Item 3</li>
-    </ul>
-  </div>
+<div class="rightNavigationPanel">
+	<div class="navIcon glyphicon" 
+		 ng-class="{ 'glyphicon-chevron-left': navStatusExpanded , 'glyphicon-chevron-right': !navStatusExpanded }" 
+		 ng-click="expandCollapseNav()"
+		 >
+	</div>
 </div>
+<div class="leftNavigationPanel">
+
+	<div>
+			<h2>Left Navigation</h2>
+	</div>
+	
+	<div>
+		<ul class="main-sections">
+	      <li class="nav-item">Nav Item 1</li>
+	      <li class="nav-item">Nav Item 2</li>
+	      <li class="nav-item">Nav Item 3</li>
+		</ul>
+	</div>
+	
+</div>
+
+
+

@@ -6,8 +6,38 @@
   <div class="container">
       <label> Application Name: {{constants.appName}} </label>
   </div>
+
   <div class="container">
   	<button type="button" class="btn btn-primary" ng-click="startSpin()">Start spinner</button>
 	<button type="button" class="btn btn-primary" ng-click="stopSpin()">Stop spinner</button>
+  </div>
+
+  <div class="container">
+
+  		<h3>Rating:</h3>
+  		<label>Using</label> <a href="https://material.angularjs.org/latest/demo/slider">Angular Material</a>
+    <div layout="">
+      <div flex="10" layout="" layout-align="center center">
+        <span class="md-body-1">default</span>
+      </div>
+      <md-slider flex="" md-discrete="" ng-model="rating1" step="1" min="1" max="5" aria-label="rating">
+      </md-slider>
+    </div>
+    <div layout="">
+      <div flex="10" layout="" layout-align="center center">
+        <span class="md-body-1">md-warn</span>
+      </div>
+      <md-slider flex="" class="md-warn" md-discrete="" ng-model="rating2" step="1" min="1" max="5" aria-label="rating">
+      </md-slider>
+    </div>
+    <div layout="">
+      <div flex="10" layout="" layout-align="center center">
+        <span class="md-body-1">md-primary</span>
+      </div>
+      <md-slider flex="" class="md-primary" md-discrete="" ng-model="rating3" step="1" min="1" max="5" aria-label="rating">
+      </md-slider>
+    </div>
+
+
   </div>
 </div>

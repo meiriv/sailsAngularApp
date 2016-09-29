@@ -6,8 +6,28 @@
 	background-color: @lightBlue;
 	box-sizing: border-box;
     float: left;
-    height: 80%;
+    height: @mainContentHeight;
+    padding-right: 5px;
+    padding-left: 5px;
+
+    .leftNavigationPanel{
+    	overflow: hidden;
+    	height: 100%;
+    }
+
+    .rightNavigationPanel{
+    	float: right;
+    	height: 100%;
+    	width: 30px;
+
+    	.navIcon{
+    		width: 50%;
+    		margin-top: 25px;
+    		margin-left: 25%;
+    	}
+    }
 }
+
 
 // Hide Left navigation on small screen
 @media only screen and (max-width: 600px) {

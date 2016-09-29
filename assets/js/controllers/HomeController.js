@@ -20,6 +20,12 @@
 
 			// set URL configuration
 			config.importHelpers(vm);
+
+			//set default rating values for the rating example
+			$scope.rating1 = 3;
+		    $scope.rating2 = 2;
+		    $scope.rating3 = 4;
+
 			spinFactory.stop();
 		}
 

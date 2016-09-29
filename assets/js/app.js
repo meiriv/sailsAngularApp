@@ -4,7 +4,8 @@
 	angular.module('app', [
     'ngRoute',
   	'ui.bootstrap',
-  	'angularSpinner'
+  	'angularSpinner',
+  	'ngMaterial'
 	]);
 
 }());
