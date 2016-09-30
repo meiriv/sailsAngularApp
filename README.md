@@ -36,8 +36,8 @@ after application is up go to http://localhost:1337/ you will be directed to htt
 
 
 The following plugind are already added to the platform:
-1. [bootstrap](http://getbootstrap.com/)
-2. [Angular Maaterial](https://material.angularjs.org/latest/demo/slider)
-3. [Angular UI Bootstrap](http://angular-ui.github.io/bootstrap/)
-4. [angular Spinner](https://github.com/urish/angular-spinner)
+- [bootstrap](http://getbootstrap.com/)
+- [Angular Maaterial](https://material.angularjs.org/latest/demo/slider)
+- [Angular UI Bootstrap](http://angular-ui.github.io/bootstrap/)
+- [angular Spinner](https://github.com/urish/angular-spinner)
 
