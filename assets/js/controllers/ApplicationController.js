@@ -30,15 +30,15 @@
 	    	  if ($scope.navStatusExpanded) 
 	    	  	{
 	    	  		$scope.navStatusExpanded = false ;
-	    	  		$scope.navWidthStyle={'width': '3%'};
+	    	  		$scope.navWidthStyle={'width': '35px'};
 	    	  		$scope.mainWidthStyle={'width': '97%'};
 
 	    	  	}
 	    	  	else 
 	    	  	{
 	    	  		$scope.navStatusExpanded = true;
-	    	  		$scope.navWidthStyle={'width': '25%'};
-	    	  		$scope.mainWidthStyle={'width': '75%'};
+	    	  		$scope.navWidthStyle={'width': '250px'};
+	    	  		$scope.mainWidthStyle={'width': '70%'};
 	    	  	};
 	    }
 	}

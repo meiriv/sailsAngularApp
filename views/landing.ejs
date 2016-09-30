@@ -4,10 +4,10 @@
   <!-- Application Header -->	
   <div class="header" ng-include="'templates/header.html'"></div>
   <!-- Left Navigation -->	
-  <div id="navDiv" class="navigation col-md-3" ng-include="'templates/navigation.html'" ng-style="navWidthStyle"></div>
+  <div id="navDiv" class="navigation" ng-include="'templates/navigation.html'" ng-style="navWidthStyle"></div>
 
   <!-- Landing page body ng-view will take care for routing the URL according to the app.router.js routing mappings-->
-  <div class="main-content col-md-9" ng-view ng-style="mainWidthStyle"></div>
+  <div class="main-content" ng-view ng-style="mainWidthStyle"></div>
 
   <!-- Application Footer -->	
   <div class="footer" ng-include="'templates/footer.html'"></div>
