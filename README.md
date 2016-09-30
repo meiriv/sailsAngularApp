@@ -34,3 +34,10 @@ run the application by going to sailsAngularApp and running:
 #### Landing Page:
 after application is up go to http://localhost:1337/ you will be directed to http://localhost:1337/#/landing which is the landing page defined in sailsAngularApp\views\landing.ejs
 
+
+The following plugind are already added to the platform:
+1. [bootstrap](http://getbootstrap.com/)
+2. [Angular Maaterial](https://material.angularjs.org/latest/demo/slider)
+3. [Angular UI Bootstrap](http://angular-ui.github.io/bootstrap/)
+4. [angular Spinner](https://github.com/urish/angular-spinner)
+
