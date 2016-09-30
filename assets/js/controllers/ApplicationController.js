@@ -41,5 +41,10 @@
 	    	  		$scope.mainWidthStyle={'width': '70%'};
 	    	  	};
 	    }
+
+	    //left navigation collapse settings
+	    $scope.isNavCollapsed = true;
+		$scope.isCollapsed = false;
+		$scope.isCollapsedHorizontal = false;
 	}
 }());

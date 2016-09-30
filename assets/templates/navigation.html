@@ -8,7 +8,7 @@
 <div class="leftNavigationPanel">
 
 	<div>
-			<h2>Left Navigation</h2>
+			<h3>Left Navigation</h3>
 	</div>
 	
 	<div>
@@ -19,7 +19,12 @@
 		</ul>
 	</div>
 	
-</div>
+	<hr>
+	<button type="button" class="btn btn-primary" ng-click="isCollapsed = !isCollapsed">Toggle collapse Vertically</button>
+	<hr>
+	<div uib-collapse="isCollapsed">
+		<div class="well well-lg">Some collapsable navigation content</div>
+	</div>
 
 
 
