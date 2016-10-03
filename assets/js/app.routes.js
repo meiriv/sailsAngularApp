@@ -24,9 +24,9 @@
 			// Detail views
 			///
 
-			.when('/detail', {
-				templateUrl: configProvider.templateUrl('detail'),
-				controller: 'DetailController as vm',
+			.when('/page1', {
+				templateUrl: "templates/page1.html",
+				controller: 'HomeController as vm',
 				reloadOnSearch: false
 			})
 
