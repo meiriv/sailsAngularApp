@@ -41,3 +41,14 @@ The following plugind are already added to the platform:
 - [Angular UI Bootstrap](http://angular-ui.github.io/bootstrap/)
 - [angular Spinner](https://github.com/urish/angular-spinner)
 
+####To change the sails connection to use mongo instead of default: ####
+	- npm install sails-mongo  (will install sails-mongo plugin under node_modules)
+	- Under config/connection.js define new connection for mongo like:
+	 localMongoDB: {
+	     adapter: 'sails-mongo',
+	     host: 'localhost',
+	     port: 27017,
+	     database: 'sails' //optional
+	   },
+	- Under config/models.js set to use the new connection: 
+		- connection: 'localMongoDB',
