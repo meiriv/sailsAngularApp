@@ -5,7 +5,9 @@
     'ngRoute',
   	'ui.bootstrap',
   	'angularSpinner',
-  	'ngMaterial'
+  	'ngMaterial',
+  	'ngAnimate',
+  	'ngSanitize'
 	]);
 
 }());

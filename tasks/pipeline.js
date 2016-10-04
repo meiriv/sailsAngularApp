@@ -46,6 +46,7 @@ var jsFilesToInject = [
   'js/dependencies/angular-aria/angular-aria.min.js',
   'js/dependencies/angular-messages/angular-messages.min.js',
   'js/dependencies/angular-material/angular-material.min.js',
+  'js/dependencies/angular-sanitize/angular-sanitize.min.js',
 
 
 
@@ -59,6 +60,7 @@ var jsFilesToInject = [
   // Load rest of application modules
   'js/config/**/*.js',
   'js/controllers/**/*.js',
+  'js/components/**/*.js',
   'js/directives/**/*.js',
   'js/services/**/*.js',
   'js/filters/**/*.js'

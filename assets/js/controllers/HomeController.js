@@ -4,15 +4,15 @@
 	angular.module('app').controller('HomeController', HomeController );
 
 	HomeController.$inject = [
-		'$scope', '$routeParams' , '$timeout' , 'config' , 'APP_TEXT' , 'spinFactory'
+		'$scope', '$routeParams' , '$timeout' , 'config' , 'APP_TEXT' , 'spinFactory' , '$log' , '$uibModal'
 	];
 
 	function HomeController(
-		$scope, $routeParams , $timeout ,  config , APP_TEXT , spinFactory
+		$scope, $routeParams , $timeout ,  config , APP_TEXT , spinFactory , $log , $uibModal
 	) {
 		
 		var vm = this;
-		
+
 
 		function init() {
 
@@ -40,4 +40,6 @@
 		init();
 		
 	}
+
+
 }());
