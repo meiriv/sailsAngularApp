@@ -4,11 +4,11 @@
 	angular.module('app').controller('ApplicationController', ApplicationController );
 
 	ApplicationController.$inject = [
-		'$scope', '$rootScope' , '$routeParams' , '$location' , 'config' , 'APP_TEXT' , 'spinFactory' , '$mdSidenav'
+		'$scope', '$rootScope' , '$routeParams' , '$location' , 'config' , 'APP_TEXT' , 'spinFactory' , '$mdSidenav' , '$http'
 	];
 
 	function ApplicationController(
-		$scope, $rootScope , $routeParams , $location , config , APP_TEXT , spinFactory , $mdSidenav
+		$scope, $rootScope , $routeParams , $location , config , APP_TEXT , spinFactory , $mdSidenav , $http
 	) {
 		var vm = this;
 		$scope.constants = APP_TEXT ;
@@ -46,5 +46,16 @@
 	    $scope.isNavCollapsed = true;
 		$scope.isCollapsed = false;
 		$scope.isCollapsedHorizontal = false;
+
+		//Get user Info from local JSON file
+		
+		$http.get("data/user.json").then(
+		    	function(res) {
+					$scope.user = res.data;
+				}
+				);
+
+		 
+
 	}
 }());

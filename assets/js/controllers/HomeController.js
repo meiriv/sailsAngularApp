@@ -4,14 +4,15 @@
 	angular.module('app').controller('HomeController', HomeController );
 
 	HomeController.$inject = [
-		'$scope', '$routeParams' , '$timeout' , 'config' , 'APP_TEXT' , 'spinFactory' , '$log' , '$uibModal'
+		'$scope', '$routeParams' , '$timeout' , 'config' , 'APP_TEXT' , 'spinFactory' , '$log' , '$uibModal' , '$http'
 	];
 
 	function HomeController(
-		$scope, $routeParams , $timeout ,  config , APP_TEXT , spinFactory , $log , $uibModal
+		$scope, $routeParams , $timeout ,  config , APP_TEXT , spinFactory , $log , $uibModal , $http
 	) {
 		
-		var vm = this;
+		var vm = this;		
+
 
 
 		function init() {
@@ -24,7 +25,7 @@
 			//set default rating values for the rating example
 			$scope.rating1 = 3;
 		    $scope.rating2 = 2;
-		    $scope.rating3 = 4;
+		    $scope.rating3 = 4;		    
 
 			spinFactory.stop();
 		}
