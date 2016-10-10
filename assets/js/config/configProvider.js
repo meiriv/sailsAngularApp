@@ -2,10 +2,12 @@
 
 	angular.module('app').provider('config', configProvider);
 
-	configProvider.$inject = ['urlConfig'];
+	configProvider.$inject = ['urlConfig' , 'propertiesConfig'];
 
-	function configProvider(urlConfig) {
+	function configProvider(urlConfig , propertiesConfig) {
 		var self = this;
+		//Load properties from application.properties file
+
 
 
 		///
@@ -14,6 +16,8 @@
 
 		// First wave: Import essentials
 		this.urls = urlConfig;
+		this.properties = propertiesConfig;
+
 
 		// Helper functions
 		this.templateUrl = function(name) {
@@ -28,6 +32,16 @@
 			return self.urls.data + name + '.json';
 		};
 
+		this.apiUrl = function(name) {
+			if (self.properties.mockedData) {
+				return self.urls.data + name + '.json';
+			}
+			else{
+				return name;
+			}
+			
+		};
+
 		///
 		// Instance Level
 		///
@@ -39,6 +53,7 @@
 				scope.templateUrl = self.templateUrl;
 			};
 
+
 			return self;
 		};
 
@@ -46,6 +61,8 @@
 			'$http',
 			'$q'
 		];
+
+
 
 	}
 

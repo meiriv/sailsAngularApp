@@ -53,6 +53,9 @@ The following plugind are already added to the platform:
 - Under config/models.js set to use the new connection: 
 	- connection: 'localMongoDB',
 
+####Frontend properties file####
+ FE propereties is defined under sailsAngularApp\assets\js\config\propertiesConfig.js and loaded by the configProvider see an example how it can be used in the ApplicationController
+
 
 #### To add new frontend dependency package: ####
 - Add the package name to sailsAngularApp\assets\bower.json dependencies

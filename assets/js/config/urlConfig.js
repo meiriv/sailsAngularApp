@@ -3,10 +3,11 @@
 
 	angular.module('app').constant('urlConfig', {
 
-		config: '/config/',
+		config: '/js/config/',
 		fonts: '/fonts/',
 		images: '/images/',
 		templates: '/templates/',
+		data: '/data/'
 
 	});
 }());

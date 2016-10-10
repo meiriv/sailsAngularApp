@@ -15,7 +15,7 @@
 				redirectTo: '/landing'
 			})
 			.when('/landing', {
-				templateUrl: "templates/home.html",
+				templateUrl: configProvider.templateUrl('home'),
 				controller: 'HomeController as vm',
 				reloadOnSearch: false
 			})
@@ -25,7 +25,7 @@
 			///
 
 			.when('/page1', {
-				templateUrl: "templates/page1.html",
+				templateUrl: configProvider.templateUrl('page1'),
 				controller: 'HomeController as vm',
 				reloadOnSearch: false
 			})

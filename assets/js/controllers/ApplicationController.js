@@ -14,6 +14,7 @@
 		$scope.constants = APP_TEXT ;
 		$rootScope.location = $location;
 
+
 		//Left Navigation is expanded by default
 		$scope.navStatusExpanded = true ;
 
@@ -48,8 +49,7 @@
 		$scope.isCollapsedHorizontal = false;
 
 		//Get user Info from local JSON file
-		
-		$http.get("data/user.json").then(
+		$http.get(config.apiUrl("user")).then(
 		    	function(res) {
 					$scope.user = res.data;
 				}
