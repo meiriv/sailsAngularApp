@@ -3,8 +3,8 @@
 ## a [Sails](http://sailsjs.org) + AngularJS application
 
 ### Introduction:
-This application is a base sails application (backend Web framework built on node.js) Integrated with angularJS (Frontend).
-The purpose is to have a quick start for any web application that will give all the development framewrok supported by sails OOB using grunt ( watch , minify , uglify , unify etc') + some basic layout that can be changed according to any given design or totally replaced but the concept is already there using angular different feature.
+This application is a base sails application (backend Web framework built on node.js) Integrated with angularJS (Frontend JS framework).
+The purpose is to have a quick start for any web application that will include all the development tools supported by sails OOB using grunt ( watch , minify , uglify , unify etc') + some basic layout that can be changed according to any given design or fully replaced but the concept is already there using angular different feature.
 
 ### How to start?
 #### Prerequisite for sails application is node.js so first make ure node is installed:
@@ -53,7 +53,7 @@ The following plugind are already added to the platform:
 - Under config/models.js set to use the new connection: 
 	- connection: 'localMongoDB',
 
-####Frontend properties file####
+####Frontend properties file:####
  FE propereties is defined under sailsAngularApp\assets\js\config\propertiesConfig.js and loaded by the configProvider see an example how it can be used in the ApplicationController
 
 
