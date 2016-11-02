@@ -3,7 +3,7 @@
 
 	angular.module('app').constant('propertiesConfig', {
 
-		mockedData: true,
+		mockedData: false,
 		LDAP: false,
 		role: 'Admin'
 	});

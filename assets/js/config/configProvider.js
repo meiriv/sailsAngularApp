@@ -32,12 +32,17 @@
 			return self.urls.data + name + '.json';
 		};
 
-		this.apiUrl = function(name) {
+		this.apiUrl = function(url) {
 			if (self.properties.mockedData) {
-				return self.urls.data + name + '.json';
+				//build the json file name based on the api url, /user?id=2 will be converted to user.json assuming that a coresponding data file exist in data folder
+				var urlArr = url.split("?");
+				//remove slash
+				var fileName = urlArr[0].replace("/", "");
+				
+				return self.urls.data + fileName + '.json';
 			}
 			else{
-				return name;
+				return url;
 			}
 			
 		};

@@ -37,7 +37,7 @@ after application is up go to http://localhost:1337/ you will be directed to htt
 
 The following plugind are already added to the platform:
 - [bootstrap](http://getbootstrap.com/)
-- [Angular Maaterial](https://material.angularjs.org/latest/demo/slider)
+- [Angular Material](https://material.angularjs.org/latest/demo/slider)
 - [Angular UI Bootstrap](http://angular-ui.github.io/bootstrap/)
 - [angular Spinner](https://github.com/urish/angular-spinner)
 
@@ -62,3 +62,9 @@ The following plugind are already added to the platform:
 - cd to sailsAngularApp\assets
 - run: bower install
 - To include the js script on your page add the new package in sailsAngularApp\tasks\pipeline.js under the jsFilesToInject
+
+#### Simulators/Mocked data: ####
+This solution allows to choose two modes for the api calls based on application property mockedData which defined in sailsAngularApp\assets\js\config\propertiesConfig.js: 
+- if set to false (default) - the api url will be executed as sent e.g. /user?id=4
+- if set to true - a mockeddata will be returned based on predfined json files under sailsAngularApp\assets\data, in our example it will look for user.json file instead. an example for the simulator use can be found in ApplicationController.js, look for: config.apiUrl
+

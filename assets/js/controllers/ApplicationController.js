@@ -49,7 +49,8 @@
 		$scope.isCollapsedHorizontal = false;
 
 		//Get user Info from local JSON file
-		$http.get(config.apiUrl("user")).then(
+		//If mockedData is enabled in propertiesConfig it will look for user.json file under assets\data
+		$http.get(config.apiUrl("/user?id=3")).then(
 		    	function(res) {
 					$scope.user = res.data;
 				}
