@@ -36,9 +36,12 @@
 			if (self.properties.mockedData) {
 				//build the json file name based on the api url, /user?id=2 will be converted to user.json assuming that a coresponding data file exist in data folder
 				var urlArr = url.split("?");
-				//remove slash
-				var fileName = urlArr[0].replace("/", "");
-				
+				// get the url path only without parameters e.g. /user/admin
+				var path = urlArr[0] ;
+				var pathArr = path.split("/");
+				//get the second array elemnet that represent the api name: ["" , "user" , "admin"]
+				var fileName = pathArr[1];
+
 				return self.urls.data + fileName + '.json';
 			}
 			else{
