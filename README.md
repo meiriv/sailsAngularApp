@@ -1,4 +1,4 @@
-# sailsAngularApp
+# Sails Angular Application
 
 ## a [Sails](http://sailsjs.org) + AngularJS application
 
