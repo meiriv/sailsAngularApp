@@ -22,8 +22,10 @@ The purpose is to have a quick start for any web application that will include a
  	- run: bower install
  	  it will download all dependencies under sailsAngularApp\assets\js\dependencies
 
- 	  **Note:** if you are behind a proxy - change proxy settings in .bowerrc
- 	  		if you want to add new dependency: update sailsAngularApp\assets\bower.json file under dependencies
+ 	  **Note:** if you are behind a proxy - change proxy settings in .bowerrc as following:
+ 	  		"proxy":"http://server.company.com:port",
+  			"https-proxy":"http://server.company.com:port",
+ 	  		- if you want to add new dependency: update sailsAngularApp\assets\bower.json file under dependencies
 
 #### Starting the application:
 run the application by going to sailsAngularApp and running:
