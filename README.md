@@ -43,7 +43,7 @@ run the application by going to sailsAngularApp and running:
  - sails lift --prod ( production mode  - include all minified CSS JS and well performance)
 
 #### Landing Page:
-after application is up go to "http://localhost:1337/"" you will be directed to "http://localhost:1337/#/landing" which is the landing page defined in sailsAngularApp\views\landing.ejs
+After application is up go to http://localhost:1337 you will be directed to http://localhost:1337/#/landing which is the landing page defined in sailsAngularApp\views\landing.ejs
 
 
 The following plugind are already added to the platform:
