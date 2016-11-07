@@ -10,6 +10,8 @@ The purpose is to have a quick start for any web application that will include a
 #### Prerequisite for sails application is node.js so first make ure node is installed:
 For platform specific download check [NodeJs Website](https://nodejs.org/en/)
 
+- Download the application sources from here
+
 Install the dependencies:
 
 ```sh
@@ -41,7 +43,7 @@ run the application by going to sailsAngularApp and running:
  - sails lift --prod ( production mode  - include all minified CSS JS and well performance)
 
 #### Landing Page:
-after application is up go to http://localhost:1337/ you will be directed to http://localhost:1337/#/landing which is the landing page defined in sailsAngularApp\views\landing.ejs
+after application is up go to "http://localhost:1337/"" you will be directed to "http://localhost:1337/#/landing" which is the landing page defined in sailsAngularApp\views\landing.ejs
 
 
 The following plugind are already added to the platform:
