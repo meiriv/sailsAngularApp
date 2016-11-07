@@ -8,19 +8,26 @@ The purpose is to have a quick start for any web application that will include a
 
 ### How to start?
 #### Prerequisite for sails application is node.js so first make ure node is installed:
- - npm -g install sails
-   For platform specific download check [NodeJs Website](https://nodejs.org/en/)
-#### Other prerequisite:
-	bower Install: npm install -g bower
+For platform specific download check [NodeJs Website](https://nodejs.org/en/)
 
- - Download the application from here
- - Install server side dependencies:
- 	- from sailsAngularApp run: npm install
- 	  it will install all dependencies from package.json to the node_modules directory
- - Download all frontend dependencies (angular , bootstrap, JQuery etc') by running the following bower commands:
- 	- cd to sailsAngularApp\assets
- 	- run: bower install
- 	  it will download all dependencies under sailsAngularApp\assets\js\dependencies
+Install the dependencies:
+
+```sh
+$ npm -g install sails
+$ npm install -g bower
+$ cd sailsAngularApp
+$ npm install
+$ cd assets
+$ bower install
+```
+
+#### Prerequisite Instructions:
+ 
+
+ - npm install - will install server side dependencies under sailsAngularApp\node_modules
+ 	  it will install all dependencies listed in package.json to the node_modules directory
+ - bower install - Will download all frontend dependencies (angular , bootstrap, JQuery etc') 
+ 	  it will download all dependencies to sailsAngularApp\assets\js\dependencies
 
  	  **Note:** if you are behind a proxy - change proxy settings in .bowerrc as following:
  	  		"proxy":"http://server.company.com:port",
